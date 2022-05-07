@@ -37,7 +37,14 @@ class _weatherAppState extends State<weatherApp> {
       home: Scaffold(
         backgroundColor: Colors.yellow,
         body: SafeArea(
-          child: Container(),
+          child: Container(
+            child: ElevatedButton(
+              child: Text("get location"),
+              onPressed: () {
+                getLocation();
+              },
+            ),
+          ),
         ),
       ),
     );
